@@ -1,4 +1,4 @@
-import { IsDate, IsInt, IsNotEmpty } from 'class-validator';
+import { IsBoolean, IsDate, IsInt, IsNotEmpty } from 'class-validator';
 
 export class CreateLoanDto {
   @IsInt()
@@ -16,4 +16,8 @@ export class CreateLoanDto {
   @IsDate()
   @IsNotEmpty()
   returnDate: Date;
+
+  @IsBoolean()
+  @IsNotEmpty()
+  returned: boolean;
 }

@@ -8,7 +8,6 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { LoansModule } from './loans/loans.module';
 import { UsersModule } from './users/users.module';
-import { User } from './users/entities/user.entity';
 
 @Module({
   imports: [

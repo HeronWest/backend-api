@@ -1,3 +1,4 @@
+// eslint-disable-next-line prettier/prettier
 import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
 import { PublishersService } from './publishers.service';
 import { CreatePublisherDto } from './dto/create-publisher.dto';
@@ -23,6 +24,7 @@ export class PublishersController {
   }
 
   @Patch(':id')
+  // eslint-disable-next-line prettier/prettier
   update(@Param('id') id: string, @Body() updatePublisherDto: UpdatePublisherDto) {
     return this.publishersService.update(+id, updatePublisherDto);
   }

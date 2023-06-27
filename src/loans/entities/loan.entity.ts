@@ -12,23 +12,29 @@ export class Loan {
     type: 'int',
     name: 'book_id',
   })
-  book_id: number;
+  bookId: number;
 
   @Column({
     type: 'int',
     name: 'user_id',
   })
-  user_id: number;
+  userId: number;
 
   @Column({
     type: 'date',
     name: 'loan_date',
   })
-  loan_date: Date;
+  loanDate: Date;
 
   @Column({
     type: 'date',
     name: 'return_date',
   })
-  return_date: Date;
+  returnDate: Date;
+
+  @Column({
+    type: 'boolean',
+    name: 'returned',
+  })
+  returned: boolean;
 }
